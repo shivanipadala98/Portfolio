@@ -1,0 +1,28 @@
+body *{
+    #root{
+        // height: 100vh;
+        width: 100%;
+        background-color: $primary-Color;
+        background: $primary-Color;
+        // min-width: 100vw;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+body{
+    background-image: linear-gradient(to right, #FEFAF6 , #DAC0A3);
+    background-color: #FFFFFF;
+    padding: 0;
+    color: #000000;
+    // max-width: calc(100% - 20rem);
+    overflow-x: hidden;
+}
+.main-content{
+    padding: 0rem 10rem 2rem 10rem !important;
+    @media (max-width: 1000px) {
+        padding: 0rem 5rem 1rem 5rem !important;
+    }
+}
+
+#education, #experience, #skills, #projects, #contactMe {
+    scroll-margin-top: 80px;
+  }

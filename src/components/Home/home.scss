@@ -1,0 +1,148 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-bar {
+  position: sticky !important;
+  top: 0;
+  z-index: 1002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  background: linear-gradient(to right, #FEFAF6, #DAC0A3);
+}
+
+.header-item {
+  margin: 0 10px;
+}
+
+.header-item a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: $font-size-ml;
+  font-weight: $font-weight-bolder;
+  position: relative;
+}
+
+.header-item a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.header-item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.home-intro {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 0px;
+  @media (max-width: 600px) {
+    margin:0px;
+  }
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+  margin: 40px 0px;
+  font-size: $font-size-l;
+  .greeting,.intro-prof,.intro-name{
+    margin-top: 16px !important;
+  }
+  @media (max-width: 800px) {
+    align-items: center;
+  }
+}
+
+.profile-image {
+  width: 350px;
+  height: 350px;
+  border-radius: 20%;
+  object-fit: cover;
+  margin-top: 40px;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.8);
+  transition: border-radius 0.5s ease-in-out;
+}
+
+.profile-image:hover{
+  border-radius: 50%;
+}
+
+@media (max-width: 1087px) {
+  .home-intro {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1231px) {
+  .profile-image {
+    width: 230px;
+    height: 230px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    margin-top: 20px;
+  }
+
+  .profile-image {
+    margin-top: 20px;
+  }
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  40% { transform: rotate(14deg); }
+  50% { transform: rotate(-4deg); }
+  60% { transform: rotate(10deg); }
+  70% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wave-hand{
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 3s infinite;
+}
+.prof-withoutType{
+  display: none;
+  @media (max-width:500px) {
+    display: block;
+    padding-top: 15px;
+    font-weight: 500;
+  }
+}
+
+.intro-prof{
+  @media (max-width:500px) {
+    display: none;
+  }
+}
+
+
