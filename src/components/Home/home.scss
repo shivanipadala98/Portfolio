@@ -97,6 +97,12 @@
   border-radius: 50%;
 }
 
+@media (max-width: 1000px) {
+  .square {
+    display: none !important;
+  }
+}
+
 
 @media (max-width: 1087px) {
   .home-intro {

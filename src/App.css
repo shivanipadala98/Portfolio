@@ -8,6 +8,7 @@
 }
 
 .decorative-shape {
+  display: block;
   position: absolute;
   z-index: -1;
 }
@@ -136,4 +137,10 @@
   position: absolute;
   bottom: -112%;
   right: -7%;
+}
+
+@media (max-width: 1000px) {
+  .decorative-shapes .decorative-shape {
+    display: none !important;
+  }
 }

@@ -20,18 +20,20 @@ function App() {
         <ContactMe />
       </div>
       {/* Decorative Shapes */}
+      <div className="decorative-shapes">
       <div className="decorative-shape circle"></div>
       <div className="decorative-shape triangle"></div>
       <div className="decorative-shape app-square"></div>
       <div className="decorative-shape app-square-grey"></div>
-      <div className="ellipse"></div>
-      <div className="diamond"></div>
-      <div className="pentagon"></div>
-      <div className="hexagon"></div>
-      <div className="hexagon-color"></div>
-      <div className="parallelogram"></div>
-      <div className="star"></div>
-      <div className="star-color"></div>
+      <div className="decorative-shape ellipse"></div>
+      <div className="decorative-shape diamond"></div>
+      <div className="decorative-shape pentagon"></div>
+      <div className="decorative-shape hexagon"></div>
+      <div className="decorative-shape hexagon-color"></div>
+      <div className="decorative-shape parallelogram"></div>
+      <div className="decorative-shape star"></div>
+      <div className="decorative-shape star-color"></div>
+      </div>
     </div>
   );
 }
