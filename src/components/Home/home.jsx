@@ -34,7 +34,11 @@ const Home = () => {
           <AboutMe/>
         </div>
         <div>
+        <div className="image-container">
         <img src={profileImage} alt="Profile" className="profile-image" />
+          <div className="square square-top"></div>
+          <div className="square square-bottom"></div>
+        </div>
         </div>
       </div>
       <AboutMeText/>

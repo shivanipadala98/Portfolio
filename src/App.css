@@ -1,12 +1,139 @@
-.App{
-  /* height: 100vh;
-  width: 100vw; */
+.App {
   display: flex;
   flex-direction: column;
-  /* padding: 10vw; */
-  /* margin: 0% 10%; */
 }
 
 .App > * {
   width: 100%;
+}
+
+.decorative-shape {
+  position: absolute;
+  z-index: -1;
+}
+
+.circle {
+  width: 150px;
+  height: 200px;
+  background-color: rgba(208, 188, 168, 0.5);
+  border-radius: 50%;
+  top: 15%;
+  left: -5%;
+}
+
+.triangle {
+  width: 150px;
+  height: 100px;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid rgba(254, 172, 160, 1);
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+.app-square {
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(254, 172, 160, 1);
+  position: absolute;
+  bottom: -155%;
+  left: -8%;
+}
+
+.app-square-grey {
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(208, 188, 168, 1);
+  font-family: 'Poynter Bold';
+  position: absolute;
+  bottom: -165%;
+  left: -5%;
+}
+
+.diamond {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 70px solid rgba(254, 172, 160, 1);
+  position: absolute;
+  bottom: -50%;
+  left: 0%;
+  transform: rotate(45deg);
+}
+
+.pentagon {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgba(208, 188, 168, 0.5);
+  position: absolute;
+  bottom: -40%;
+  left: 0%;
+}
+
+.hexagon {
+  width: 100px;
+  height: 155px;
+  background-color: rgba(208, 188, 168, 0.5);
+  position: absolute;
+  bottom: -235%;
+  right: -3%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon-color {
+  width: 100px;
+  height: 155px;
+  background-color: rgba(254, 172, 160, 1);
+  position: absolute;
+  bottom: -245%;
+  right: -5%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.star {
+  width: 150px;
+  height: 120px;
+  background-color: rgba(254, 172, 160, 1);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  position: absolute;
+  bottom: -100%;
+  right: -5%;
+}
+
+.star-color {
+  width: 150px;
+  height: 120px;
+  background-color: rgba(208, 188, 168, 1);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  position: absolute;
+  bottom: -112%;
+  right: -7%;
 }
