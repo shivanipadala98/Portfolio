@@ -9,7 +9,7 @@ const projects=[
     projectLogo: cypressLawnLogo,
     projectName:"CypressLawn",
     skills: "React,Nodejs,Express,MySQL",
-    description: ["Developed user-facing features provided by UI/UX design provided by design team,API integrations,Developed backend API endpoints and implemented DB migrations and Scripts."],
+    description: ["Developed user-facing features provided by UI/UX design team,API integrations,Developed backend API endpoints and implemented DB migrations and Scripts."],
     
   },
   {
