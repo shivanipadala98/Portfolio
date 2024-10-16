@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from "../../assets/Files/profileImg.jpeg";
+import profileImage from "../../assets/Files/portfolio_profile.jpeg";
 import Typewriter from "typewriter-effect";
 import AboutMe from "../AboutMe/aboutMe";
 import AboutMeText from "../AboutMe/aboutMeText";
